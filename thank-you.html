@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thank You</title>
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta name=" keywords" content="" />
+    <meta name="ROBOTS" content="index, follow" />
+    <meta name="ROBOTS" content="ALL" />
+    <meta name="Slurp" content="index,follow,archive" />
+    <meta name="robots" content="NOODP" />
+    <meta name="geo.region" content="IN" />
+    <meta name="allow-search" content="yes" />
+    <meta name="revisit-after" content="daily" />
+    <meta name="distribution" content="global" />
+    <meta name="expires" content="never" />
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image:alt" content="" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="icon" href="./assets/images/img/favicon.png">
+
+
+    <script>
+        function getAllParams() {
+            var vars = {};
+            const url = new URL(
+                window.location.href
+            );
+            for (let [key, value] of url.searchParams) {
+                vars[key] = value;
+            }
+            return vars;
+        }
+        var queryParams = getAllParams();
+    </script>
+    <!-- Start Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-ND2M3B3');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="thank-you-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND2M3B3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section class="thank-you-section">
+        <div class="position-absolute text-center thank-you-container top-50 start-50 translate-middle">
+            <img src="./assets/images/img/project-logo.png" alt="" class="thank-you-logo">
+            <h3 class="head-title mt-3">Thank You For Contacting Us</h3>
+            <h4>One of Our Executives will Contact You Soon.</h4>
+            <div class="brochure pt-3">
+                <a class="btn-style-one home-btn-thank-you" href="index.html"
+                    style="text-align: center; margin-top: 20px">
+                    HOME
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        $('a').one('click', function (e) {
+            if (e.currentTarget.className != "nav-link") {
+                e.preventDefault();
+                if (window.location.href.indexOf('?') != -1) {
+                    this.href = this.href + "?" + window.location.href.slice(window.location.href.indexOf('?') + 1);
+                }
+                this.click();
+            }
+        });
+    </script>
+</body>
+
+</html>
